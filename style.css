@@ -1,0 +1,295 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html{
+    scroll-behavior: smooth;
+}
+* {
+    font-family: 'Fredoka', serif !important;
+    background-color: #CCE3A2;
+}
+
+a{
+    @apply hover:text-gray-600 transition-transform duration-200;
+}
+
+.flexx {
+    @apply flex items-center;
+}
+
+.logo {
+    @apply flex items-center justify-between m-2;
+    width: 420px;
+}
+
+.logo-design {
+    @apply size-16;
+}
+
+.logo-text {
+    font-size: 40px;
+}
+
+.search-bar {
+    @apply flex items-center justify-between bg-red-50 rounded-full p-4 mx-8;
+    height: 40px;
+    width: 250px;
+}
+
+.search-area {
+    @apply bg-red-50 pl-4;
+    outline: none;
+    width: 180px;
+}
+
+.start-text {
+    font-size: 40px;
+    width: 950px;
+}
+.section1 {
+    @apply border-b-2 border-black border-dashed flexx;
+    height: 452px;
+}
+
+.boy-image {
+    height: 450px;
+    margin-right: 50px;
+}
+
+.home-page {
+    background-image: url("./Images/HeroPageBackGround.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 805px;
+    position: relative;
+    width: 100%;
+}
+
+.hero-text {
+    @apply flexx flex-col justify-center text-white font-serif;
+    height: 700px;
+    font-size: 150px;
+}
+
+.mottoo {
+    @apply text-white font-serif bg-transparent;
+    font-size: 50px;
+}
+
+.section{
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+    background-attachment: fixed;
+}
+.goals-and-visions{
+    background-image: url("./Images/leaf-background.jpg");
+}
+.upperpart-of-goals-and-vision{
+    background-image:linear-gradient(to bottom, #15262E, #E2FFD7) ;
+    width: 100%;
+    height: 100%;
+    opacity: 0.9;
+}
+
+.section-heading{
+    @apply text-center text-5xl bg-transparent font-semibold p-12 text-black;
+    
+}
+.goal, .goals, .goal-image, .goal-text{
+    background-color: transparent;
+}
+.goals{
+    @apply flexx justify-around;
+    
+}
+.goal{
+    @apply flexx flex-col justify-center mt-32 hover:scale-125 transition-transform duration-300;
+    width: 155px;
+    height: 200px;
+}
+.goal-image{
+    height: 150px;
+    width: 150px;
+}
+.goal-text{
+    @apply text-xl p-3 text-center;
+}
+
+.how-it-works{
+    background-image: url("./Images/flower-background.jpg");
+    @apply flexx;
+}
+.upper-background-of-how-it-works{
+    @apply flexx flex-col justify-center;
+    background-image: #E2FFD7;  
+    width: 100%;
+    height: 100%;
+    opacity: 0.85;
+}
+.circle{
+    @apply size-32 rounded-full shadow-xl flexx justify-center text-7xl font-semibold text-gray-500;
+    background-color: #C7EBB6;
+    opacity: 1;
+}
+.steps{
+    @apply flexx justify-around px-36;
+}
+.step{
+    @apply flexx flex-col justify-center hover:scale-110 transition-transform duration-300;
+    height: 250px;
+    width: 200px;
+}
+.step:hover{
+    .circle{
+        @apply rotate-[360deg] transition-transform duration-500;
+    }
+}
+.step-text{
+    @apply text-xl p-3 text-center;
+}
+.section-text{
+    @apply text-center text-2xl px-44 mt-20 bg-transparent;
+    width: 100%;
+}
+
+.learn-more-button{
+    @apply rounded-2xl shadow-xl text-sm mt-3 hover:scale-110 hover:bg-green-100 transition-transform duration-300;
+    width: 120px;
+    height: 40px;
+    background-color: #C7EBB6;
+}
+.website-features{
+    background-image: url("./Images/leaf-background2.jpg")
+}
+.upper-background-of-website-features{
+    background-color: #CCCCCC;  
+    width: 100%;
+    height: 100%;
+    opacity: 0.85;
+}
+.features{
+    @apply bg-transparent flex flex-wrap mx-20 mt-16 justify-between;
+    height: 450px;
+}
+.feature{
+    @apply bg-transparent hover:scale-105 transition-transform duration-500;
+    height: 100px;
+    width: 320px;;
+}
+.comment{
+    @apply size-8 bg-transparent;
+}
+.feature-heading{
+    @apply text-2xl font-semibold flex bg-transparent;
+}
+.feature-text{
+    @apply text-sm mt-2 bg-transparent;
+    margin-left: 46px;
+}
+
+.user-advantages{
+    background-image: url("./Images/garden.jpg");
+}
+.upper-background-of-user-advantages{
+    background-color: #DDDDDD;  
+    width: 100%;
+    height: 100%;
+    opacity: 0.80;
+    border-bottom: 3px dashed black;
+    border-image: repeating-linear-gradient(90deg, black 0, black 15px, transparent 10px, transparent 20px) 1;
+}
+
+.section-text2{
+    @apply text-center text-3xl px-44 mt-16 bg-transparent;
+    width: 100%;
+}
+.advantages{
+    @apply bg-transparent flex justify-between px-48 mt-20;
+}
+.advantage{
+    @apply  flexx flex-col bg-transparent m-2 hover:scale-125 transition-transform duration-300;
+    height: 150px;
+    width: 140px;
+}
+.advantage-img{
+    @apply rounded-xl object-cover opacity-100 shadow-gray-500 shadow-md;
+    height: 150px;
+    width: 120px;
+}
+.advantage-text{
+    @apply text-lg  text-center bg-transparent underline mt-3;
+}
+
+.sdg-goals{
+    background-image: url("./Images/leaf-background3.jpg");
+    height: 400px;
+}
+.upper-background-of-sdg-goals{
+    @apply border-b-2 border-black border-dashed;
+    background-color: #D3ECD1;  
+    width: 100%;
+    height: 100%;
+    opacity: 0.80;
+}
+.sdgs{
+    @apply flexx bg-transparent justify-between px-40 my-10 ;
+}
+.sdg-img{
+    @apply size-28 rounded-md shadow-lg hover:scale-150 transition-transform duration-300; 
+}
+.contact{
+    background-image: url("./Images/contact-image.jpg");
+    height: 90vh;
+}
+.upper-background-of-contact{
+    @apply flexx flex-col ;
+    background-color: #f2f4f2;  
+    width: 100%;
+    height: 100%;
+    opacity: 0.90;
+}
+.address{
+    @apply bg-transparent text-center text-lg pb-12 text-gray-500;
+    width: 400px;
+
+}
+.input{
+    @apply flexx justify-between w-screen bg-transparent px-40;
+}
+.your-name, .your-email, .your-message{
+    @apply border-2 shadow-lg rounded-md p-3 pl-7 placeholder:text-lg outline-none text-lg focus:scale-105 transition-transform duration-500;
+    background-color: #c6c6c6;
+    height: 50px;
+    width: 600px;
+}
+.your-message{
+    @apply resize-none mt-4;
+    height: 180px;
+    width: 1215px;
+}
+.send-button{
+    @apply border-none rounded-md bg-slate-400 text-xl m-6 shadow-lg text-white hover:scale-105 hover:bg-slate-500 transition-transform duration-300; 
+    height:45px;
+    width: 250px;
+}
+.footer{
+    a{
+        @apply bg-transparent underline mx-2;
+    }
+    @apply w-screen text-white flexx justify-between px-10;
+    height: 8vh;
+    background-color: #444444; 
+}
+.footer-links{
+    @apply bg-transparent;
+}
+.media{
+    @apply bg-transparent flexx ;
+}
+.media-logo{
+    @apply size-6 bg-transparent hover:rotate-[360deg] transition-transform duration-500;
+}
