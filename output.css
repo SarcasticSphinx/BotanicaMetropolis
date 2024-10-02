@@ -625,13 +625,19 @@ video {
   opacity: 0.6;
 }
 
-html{
+html, body {
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  /* Prevent horizontal scrolling */
+  width: 100%;
+  max-width: 100%;
 }
 
 * {
   font-family: 'Fredoka', serif !important;
   background-color: #CCE3A2;
+  box-sizing: border-box;
+  /* Include padding and border in element's total width and height */
 }
 
 a {
@@ -713,7 +719,8 @@ a:hover {
   background-image: url("./Images/HeroPageBackGround.jpg");
   background-size: cover;
   background-position: center;
-  height: 805px;
+  min-height: 805px;
+  /* Changed from fixed height to min-height */
   position: relative;
   width: 100%;
 }
@@ -740,6 +747,7 @@ a:hover {
 
 .section{
   height: 100vh;
+  /* Changed from fixed height to min-height */
   background-position: center;
   background-size: cover;
   width: 100%;
@@ -1151,7 +1159,7 @@ a:hover {
 }
 
 .input {
-  width: 100vw;
+  width: 100%;
   justify-content: space-between;
   background-color: transparent;
   padding-left: 10rem;
@@ -1196,14 +1204,15 @@ a:hover {
 .your-name, .your-email, .your-message{
   background-color: #c6c6c6;
   height: 50px;
-  width: 600px;
+  width: 590px;
 }
 
 .your-message {
   margin-top: 1rem;
   resize: none;
   height: 180px;
-  width: 1215px;
+  width: 100%;
+  max-width: 1200px;
 }
 
 .send-button {
@@ -1248,15 +1257,26 @@ a:hover {
   a {
     text-decoration-line: underline;
   }
-  width: 100vw;
+  width: 100%;
+  flex-wrap: wrap;
   justify-content: space-between;
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
   display: flex;
   align-items: center;
-  height: 8vh;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+}
+
+.footer{
+  min-height: 8vh;
   background-color: #444444;
 }
 

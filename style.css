@@ -2,12 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
-html{
+html, body {
     scroll-behavior: smooth;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    width: 100%;
+    max-width: 100%;
 }
+
 * {
     font-family: 'Fredoka', serif !important;
     background-color: #CCE3A2;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
 }
 
 a{
@@ -61,7 +66,7 @@ a{
     background-image: url("./Images/HeroPageBackGround.jpg");
     background-size: cover;
     background-position: center;
-    height: 805px;
+    min-height: 805px; /* Changed from fixed height to min-height */
     position: relative;
     width: 100%;
 }
@@ -78,7 +83,7 @@ a{
 }
 
 .section{
-    height: 100vh;
+    height: 100vh; /* Changed from fixed height to min-height */
     background-position: center;
     background-size: cover;
     width: 100%;
@@ -258,18 +263,22 @@ a{
 
 }
 .input{
-    @apply flexx justify-between w-screen bg-transparent px-40;
+    @apply flexx justify-between w-full bg-transparent px-4 px-40;
 }
+
 .your-name, .your-email, .your-message{
     @apply border-2 shadow-lg rounded-md p-3 pl-7 placeholder:text-lg outline-none text-lg focus:scale-105 transition-transform duration-500;
     background-color: #c6c6c6;
     height: 50px;
-    width: 600px;
+    width: 590px;
+    
 }
+
 .your-message{
     @apply resize-none mt-4;
     height: 180px;
-    width: 1215px;
+    width: 100%;
+    max-width: 1200px;
 }
 .send-button{
     @apply border-none rounded-md bg-slate-400 text-xl m-6 shadow-lg text-white hover:scale-105 hover:bg-slate-500 transition-transform duration-300; 
@@ -280,8 +289,8 @@ a{
     a{
         @apply bg-transparent underline mx-2;
     }
-    @apply w-screen text-white flexx justify-between px-10;
-    height: 8vh;
+    @apply w-full text-white flexx flex-wrap justify-between px-4 md:px-10;
+    min-height: 8vh;
     background-color: #444444; 
 }
 .footer-links{
