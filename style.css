@@ -94,6 +94,7 @@ a{
     background-image: url("./Images/leaf-background.jpg");
 }
 .upperpart-of-goals-and-vision{
+    @apply px-16;
     background-image:linear-gradient(to bottom, #15262E, #E2FFD7) ;
     width: 100%;
     height: 100%;
@@ -171,6 +172,7 @@ a{
     background-image: url("./Images/leaf-background2.jpg")
 }
 .upper-background-of-website-features{
+       
     background-color: #CCCCCC;  
     width: 100%;
     height: 100%;
@@ -181,7 +183,7 @@ a{
     height: 450px;
 }
 .feature{
-    @apply bg-transparent hover:scale-105 transition-transform duration-500;
+    @apply bg-transparent hover:scale-105 transition-transform duration-500 mx-2;
     height: 100px;
     width: 320px;;
 }

@@ -602,6 +602,16 @@ video {
   padding: 0.5rem;
 }
 
+.px-12 {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.px-16 {
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
 .px-5 {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
@@ -759,7 +769,9 @@ a:hover {
   background-image: url("./Images/leaf-background.jpg");
 }
 
-.upperpart-of-goals-and-vision{
+.upperpart-of-goals-and-vision {
+  padding-left: 4rem;
+  padding-right: 4rem;
   background-image:linear-gradient(to bottom, #15262E, #E2FFD7) ;
   width: 100%;
   height: 100%;
@@ -969,6 +981,8 @@ a:hover {
 }
 
 .feature {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
   background-color: transparent;
   transition-property: transform;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
